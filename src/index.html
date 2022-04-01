@@ -8,67 +8,117 @@
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/main.js" defer></script>
     <title>Stardew Valley</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;800&family=Chakra+Petch:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div class="logo-header">
-        <img src="../img/chicken.png" alt="Chicken icon" />
-        <h3>Stardew Valley</h3>
-      </div>
-      <ul>
-        <li>Gameplay</li>
-        <li>Villagers</li>
-      </ul>
+      <nav>
+          <ul class="nav">
+              <img src="./img/chicken.png">
+              <li><a href="index.html" class="logo-header">Stardew Valley</a></li>
+              <li><a href="gameplay.html">Gameplay</a></li>
+              <li><a href="villagers.html">Villagers</a></li>
+          </ul>
+        </nav>
     </header>
 
     <main class="main-bg-img">
-      <img src="../img/background.png" alt="Blue sky with green valley" />
-      <img src="../img/logo.png" alt="The Stardew Valley logo" />
+      <img
+        class="main-logo"
+        src="./img/logo.png"
+        class="logo-main"
+        alt="The Stardew Valley logo"
+      />
       <div class="arrow-words">
         <p>You're moving to the valley...</p>
-        <img src="../img/double-arrow-down.svg" alt="Down arrow" />
+        <img
+          class="arrows"
+          src="./img/double-arrow-down.svg"
+          alt="Down arrow"
+        />
       </div>
-      <img
-        src="../img/concerned-ape.gif"
-        alt="The logo of ConcernedApe, Stardew Valley's Developer"
-      />
+      <div class="concerned-ape">
+        <img
+          src="./img/concerned-ape.gif"
+          alt="The logo of ConcernedApe, Stardew Valley's Developer"
+        />
+      </div>
     </main>
 
     <article class="article-one">
       <h1>It's the perfect place to start your new life</h1>
-      <p>words</p>
+      <p class="p-one">
+        Stardew Valley is an open-ended country-life RPG! You’ve inherited your
+        grandfather’s old farm plot in Stardew Valley. Armed with hand-me-down
+        tools and a few coins, you set out to begin your new life. Can you learn
+        to live off the land and turn these overgrown fields into a thriving
+        home? It won’t be easy. Ever since Joja Corporation came to town, the
+        old ways of life have all but disappeared. The community center, once
+        the town’s most vibrant hub of activity, now lies in shambles. But the
+        valley seems full of opportunity. With a little dedication, you might
+        just be the one to restore Stardew Valley to greatness!
+      </p>
       <iframe
-        width="560"
-        height="315"
+        class="trailer"
         src="https://www.youtube.com/embed/ot7uXNQskhs"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
-      <p>words</p>
+      <p class="p-two">
+        Pelican Town is where the player moves to at the start of the game,
+        located in Stardew Valley. Pelican Town is where most of the villagers
+        live, work, and socialize. Lewis is the mayor of Pelican Town and has
+        been for over 20 years; he comments that he has not had competition for
+        the role since first becoming mayor. The northwest entrance to town
+        connects to the Bus Stop and The Farm. The southwest passage connects to
+        Cindersap Forest, which contains Marnie's Ranch, Leah's Cottage, and the
+        Wizard's Tower. Directly south of town is The Beach. North of town
+        connects to The Mountain, with Robin's carpenter shop, the mines, the
+        Adventurer's Guild, the Railroad, and the Quarry. Initially, there are
+        weeds located near 2 Willow Lane, in the area behind 1 Willow Lane,
+        behind JojaMart, and to the west of the Community Center, below the
+        playground. These weeds will die during Winter, but will respawn at the
+        start of each new year.
+      </p>
     </article>
     <article class="article-two">
       <div class="card-one">
-        <img src="../img/house.png" alt="A house" />
+        <img class="house" src="./img/house.png" alt="A house" />
         <div class="gameplay">
-          <h2>Gameplay</h2>
-          <p>words</p>
+          <a href="gameplay.html">
+            <h2>Gameplay</h2>
+            <p>Learn about how to play the game.</p>
+          </a>
         </div>
       </div>
       <div class="card-two">
-        <img src="../img/player.png" alt="A person on a horse" />
+        <img class="lewis" src="./img/lewis.png" alt="A person on a horse" />
         <div class="villagers">
-          <h2>Villagers</h2>
-          <p>words</p>
+          <a href="villagers.html">
+            <h2>Villagers</h2>
+            <p>Get to know your community.</p>
+          </a>
         </div>
       </div>
     </article>
     <footer>
       <div class="logo-footer">
-        <img src="../img/chicken.png" alt="Chicken icon" />
+        <img src="./img/chicken.png" alt="Chicken icon" />
         <h4>Stardew Valley</h4>
       </div>
+      <p>
+        This website is a derivative of <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki">stardewvalleywiki.com</a> by <a href=https://stardewvalleywiki.com/Special:ActiveUsers>contributors</a>
+        from the Stardew Valley community and the wiki's moderators and
+        administrators, used under <a href="https://creativecommons.org/licenses/by/2.0/"">CC BY</a>. This website is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY</a>
+        by Daniella Escobar.
+      </p>
     </footer>
   </body>
 </html>
