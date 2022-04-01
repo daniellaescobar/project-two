@@ -1,3 +1,5 @@
+font-family: "Abhaya Libre", serif;
+font-family: "Chakra Petch", sans-serif;
 /* Decent Defaults */
 
 img,
@@ -8,9 +10,727 @@ video {
 
 /* Homepage */
 
-.header {
+header {
   background-color: #003d0c;
-  height: 80px;
   box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.16);
-  width: 100vw;
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+
+.main-bg-img {
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas:
+    ". . ."
+    ". main-logo ."
+    ". arrow-words concerned-ape";
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: hsl(32, 74%, 56%);
+  font-family: "Abhaya Libre", serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.nav li {
+  margin-left: 1rem;
+}
+
+header img {
+  max-height: 1.8rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a:hover {
+  color: #e8bc8a;
+}
+
+.logo-header {
+  align-self: flex-start;
+}
+.main-logo {
+  grid-area: main-logo;
+}
+
+.concerned-ape {
+  grid-area: concerned-ape;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.arrow-words {
+  grid-area: arrow-words;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  font-family: "Abhaya Libre", serif;
+  font-size: 1.3rem;
+}
+
+.article-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+}
+
+.article-one h1 {
+  display: flex;
+  align-items: center;
+  color: #003d0c;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Abhaya Libre", serif;
+}
+
+.article-one p {
+  font-family: "Chakra Petch", sans-serif;
+  color: #003d0c;
+  font-size: 0.8rem;
+}
+
+.p-one {
+  margin-bottom: 5%;
+}
+
+.p-two {
+  margin-top: 5%;
+}
+iframe.trailer {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.article-one .one {
+  padding-bottom: 5%;
+}
+
+.article-one .two {
+  padding-top: 5%;
+}
+
+.article-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+  gap: 1rem;
+}
+
+.card-one {
+  display: flex;
+  flex-direction: column;
+  background-color: #fae793;
+  align-items: center;
+  padding: 20% 15% 20% 15%;
+  border-radius: 3%;
+  width: 100%;
+  text-decoration: none;
+}
+
+.card-one:hover {
+  background-color: #f5ce21;
+}
+
+.house {
+  width: 50%;
+}
+
+.gameplay {
+  padding-top: 15%;
+}
+
+.gameplay a {
+  text-decoration: none;
+}
+
+.gameplay h2 {
+  color: #003d0c;
+  font-family: "Abhaya Libre", serif;
+}
+
+.gameplay p {
+  color: #003d0c;
+  font-family: "Chakra Petch", sans-serif;
+}
+.card-two {
+  display: flex;
+  flex-direction: column;
+  background-color: #fae793;
+  align-items: center;
+  padding: 20% 15% 20% 15%;
+  border-radius: 3%;
+  width: 100%;
+  text-decoration: none;
+}
+
+.card-two:hover {
+  background-color: #f5ce21;
+}
+.lewis {
+  width: 50%;
+}
+
+.villagers {
+  padding-top: 15%;
+}
+
+.villagers a {
+  text-decoration: none;
+}
+
+.villagers h2 {
+  color: #003d0c;
+  font-family: "Abhaya Libre", serif;
+}
+
+.villagers p {
+  color: #003d0c;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+footer {
+  background-color: #003d0c;
+  padding-bottom: 1px;
+}
+
+.logo-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-footer img {
+  max-width: 1.5rem;
+}
+
+.logo-footer h4 {
+  color: hsl(32, 74%, 56%);
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 1%;
+}
+
+footer p {
+  color: hsl(32, 74%, 56%);
+  text-align: left;
+  margin: 0 5% 5% 5%;
+}
+
+footer a:hover: {
+  color: #f5ce21;
+}
+
+footer a:visited {
+  color: lightpink;
+}
+/* Villagers */
+
+.main-bg-villagers {
+  display: flex;
+  flex-direction: column;
+  background-color: #dbeefd;
+}
+
+.headline-right-villagers {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 5% 5% 40%;
+}
+
+.headline-right-villagers h1 {
+  text-align: right;
+  color: #003d0c;
+  font-family: "Abhaya Libre", serif;
+  font-size: 2.5rem;
+}
+
+.headline-right-villagers h2 {
+  text-align: right;
+  color: #003d0c;
+  font-family: "Abhaya Libre", serif;
+  font-size: 1.1rem;
+}
+
+.article-left-villagers {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 40% 5% 5%;
+}
+
+.article-left-villagers p {
+  font-family: "Chakra Petch", sans-serif;
+  color: #003d0c;
+}
+
+.photo-caption {
+  font-style: italic;
+  font-size: 0.8rem;
+  padding-bottom: 5%;
+}
+
+.photo-caption img {
+  width: 100%;
+}
+
+.map {
+  padding-top: 5%;
+}
+
+.row-one {
+  display: flex;
+  flex-direction: row;
+  margin: 5% 5% 0 5%;
+  justify-content: center;
+}
+
+.abigail .alex .elliot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row-one a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: #003d0c;
+  font-size: 1.2rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.row-one a:hover {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: #003d0c;
+  font-size: 1.2rem;
+  color: #44a457;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.row-two {
+  display: flex;
+  flex-direction: row;
+  margin: 5% 5% 0 5%;
+  justify-content: center;
+}
+
+.emily .haley .harvey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row-two a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: #003d0c;
+  font-size: 1.2rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.row-two a:hover {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: #003d0c;
+  font-size: 1.2rem;
+  color: #44a457;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.row-three {
+  display: flex;
+  flex-direction: row;
+  margin: 5% 5% 0 5%;
+  justify-content: center;
+}
+
+.leah .maru .sebastian {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row-three a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: #003d0c;
+  font-size: 1.2rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.row-three a:hover {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: #003d0c;
+  font-size: 1.2rem;
+  color: #44a457;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.row-four {
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+  justify-content: center;
+}
+
+.same .penny .shane {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row-four a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: #003d0c;
+  font-size: 1.2rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.row-four a:hover {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: #003d0c;
+  font-size: 1.2rem;
+  color: #44a457;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.article-one-villagers h1 {
+  text-align: center;
+  color: #003d0c;
+  font-family: "Abhaya Libre", serif;
+  font-size: 2rem;
+  margin-top: 5%;
+}
+
+.article-two-villagers {
+  background-color: #fae793;
+  padding: 5% 0 5% 0;
+}
+.headline-left-villagers {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 40% 5% 5%;
+}
+
+.headline-left-villagers h1 {
+  text-align: left;
+  color: #003d0c;
+  font-family: "Abhaya Libre", serif;
+  font-size: 2.5rem;
+}
+
+.headline-left-villagers h2 {
+  text-align: left;
+  color: #003d0c;
+  font-family: "Abhaya Libre", serif;
+  font-size: 1.1rem;
+}
+
+.article-right-villagers {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 5% 5% 40%;
+}
+
+.article-right-villagers p {
+  font-family: "Chakra Petch", sans-serif;
+  color: #003d0c;
+}
+
+/* Gameplay */
+.article-one-gameplay {
+  background-color: #dbeefd;
+}
+
+.headline-left-gameplay {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40% 5% 5%;
+  padding-top: 5%;
+}
+
+.headline-left-gameplay h1 {
+  display: flex;
+  color: #003d0c;
+  font-family: "Abhaya Libre", serif;
+  font-size: 2.5rem;
+}
+
+.headline-left-gameplay h2 {
+  text-align: left;
+  color: #003d0c;
+  font-family: "Abhaya Libre", serif;
+  font-size: 1.1rem;
+}
+
+.article-right-gameplay {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 5% 5% 40%;
+  color: #003d0c;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.article-left-gameplay p {
+  font-family: "Chakra Petch", sans-serif;
+}
+.article-two-gameplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+  padding: 0 0 5% 0;
+}
+
+.article-two-gameplay h1 {
+  display: flex;
+  align-items: center;
+  color: #003d0c;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Abhaya Libre", serif;
+}
+
+.article-two-gameplay p {
+  font-family: "Chakra Petch", sans-serif;
+  color: #003d0c;
+  font-size: 0.8rem;
+  margin-bottom: 5%;
+}
+
+.article-one-gameplay h1 {
+  text-align: center;
+  color: #003d0c;
+  font-family: "Abhaya Libre", serif;
+  font-size: 2.5rem;
+  margin-top: 5%;
+}
+
+.article-three-gameplay {
+  background-color: #fae793;
+}
+
+.faq {
+  color: #003d0c;
+  font-family: "Abhaya Libre", serif;
+  text-decoration: none;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  width: 100%;
+  background: #c6c6c6;
+}
+
+.headline-right-gameplay {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 5% 5% 40%;
+  padding-top: 5%;
+}
+
+.headline-right-gameplay h1 {
+  text-align: right;
+  color: #003d0c;
+  font-family: "Abhaya Libre", serif;
+  font-size: 2rem;
+}
+
+.headline-right-gameplay h2 {
+  text-align: right;
+  color: #003d0c;
+  font-family: "Abhaya Libre", serif;
+  font-size: 1.1rem;
+}
+
+.article-left-gameplay {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 40% 0 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.article-left-gameplay p {
+  color: #003d0c;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+/* Media Query */
+@media only screen and (min-width: 700px) {
+  .article-two {
+    margin: 3%;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  /* Home Media Query */
+
+  .card-one {
+    display: flex;
+    flex-direction: column;
+    background-color: #fae793;
+    align-items: center;
+    padding: 10% 15% 10% 15%;
+    border-radius: 3%;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .card-two {
+    display: flex;
+    flex-direction: column;
+    background-color: #fae793;
+    align-items: center;
+    padding: 10% 15% 10% 15%;
+    border-radius: 3%;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .article-one {
+    margin: 5% 20% 0 20%;
+  }
+
+  .p-one {
+    margin-bottom: 3%;
+  }
+
+  .p-two {
+    margin-top: 3%;
+  }
+
+  .article-one .one {
+    padding-bottom: 3%;
+  }
+
+  .article-one .two {
+    padding-top: 3%;
+  }
+
+  /* Villagers Media Query */
+
+  .photo-caption {
+    padding-bottom: 3%;
+  }
+
+  .map {
+    padding-top: 3%;
+  }
+
+  .article-one-villagers h1 {
+    margin-top: 3%;
+  }
+
+  .headline-right-villagers {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10% 5% 40%;
+  }
+
+  .article-left-villagers {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 40% 5% 10%;
+  }
+
+  .headline-left-villagers {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 40% 5% 10%;
+  }
+
+  .article-right-villagers {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10% 5% 40%;
+  }
+  /* Gameplay Media Query */
+
+  .headline-left-gameplay {
+    padding-top: 3%;
+    margin: 0 40% 5% 10%;
+  }
+
+  .article-right-gameplay {
+    margin: 5% 10% 5% 40%;
+  }
+
+  .article-two-gameplay {
+    margin: 5% 20% 0 20%;
+  }
+
+  .article-two-gameplay p {
+    margin-bottom: 3%;
+  }
+
+  .article-one-gameplay h1 {
+    margin-top: 3%;
+  }
+
+  .headline-right-gameplay {
+    padding-top: 3%;
+  }
+
+  .article-left-gameplay {
+    padding-bottom: 3%;
+  }
+
+  .article-left-gameplay {
+    margin: 5% 40% 0 10%;
+  }
+
+  .headline-right-gameplay {
+    margin: 5% 10% 5% 40%;
+  }
+
+  /* Villagers main */
+  .main-bg {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "article-left headline-right";
+  }
+
+  .article-left {
+    display: flex;
+    flex-direction: column;
+  }
 }
